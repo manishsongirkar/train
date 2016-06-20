@@ -27,7 +27,7 @@
 					start: { x: 215, y: 380 },
 					end: { x: 215, y: 380 }
 				}
-			],
+			]
 		},
 
 		init: function(){
@@ -43,7 +43,6 @@
 		setProps: function(){
 			this.stage = doc.getElementById( 'tain-scene' );
 			this.playButton = doc.getElementById( 'play' );
-			this.handle = doc.querySelectorAll( '.handle' );
 			this.honk = new Audio('assets/sound/horn.mp3');
 		},
 
@@ -157,10 +156,11 @@
 		},
 
 		hasClass: function( el, className ){
-			if (el.classList)
+			if ( el.classList ) {
 			  return el.classList.contains(className);
-			else
+			} else{
 			  return new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className);
+			}
 		},
 
 		addClass: function( el, className ){
