@@ -1,7 +1,7 @@
 /*==============================
           Reset
 ===============================*/
-body{
+body {
 	padding: 0;
 	margin: 0;
 }
@@ -10,14 +10,14 @@ body{
           Scene
 ===============================*/
 
-#tain-scene{
-	background: url( 'assets/scene.png' );
+#tain-scene {
+	background: url("assets/scene.png");
 	width: 642px;
 	height: 480px;
 	position: relative;
 }
 
-button{
+button {
 	cursor: pointer;
 	width: 100px;
 	height: 100px;
@@ -29,89 +29,89 @@ button{
           Handles
 ===============================*/
 
-.handle{
+.handle {
 	width: 55px;
 	height: 55px;
 	position: absolute;
-	cursor:pointer;
+	cursor: pointer;
 	transition: 0.1s;
 }
 
-.handle-1{
+.handle-1 {
 	top: 128px;
 	left: 374px;
 }
 
-.handle-2{
+.handle-2 {
 	top: 56px;
-    left: 217px;
+	left: 217px;
 }
 
-.handle-3{
-    top: 215px;
-    left: 301px;
+.handle-3 {
+	top: 215px;
+	left: 301px;
 }
 
-.handle-4{
+.handle-4 {
 	top: 290px;
-    left: 212px;
+	left: 212px;
 }
 
-.handle-5{
+.handle-5 {
 	top: 295px;
-    left: 366px;
+	left: 366px;
 }
 
-.handle-6{
+.handle-6 {
 	top: 136px;
 	left: 140px;
 }
 
-.handle-down{
-	background: url( 'assets/handles/down.png' );
+.handle-down {
+	background: url("assets/handles/down.png");
 }
 
-.handle-straight{
-	background: url( 'assets/handles/straight.png' );
+.handle-straight {
+	background: url("assets/handles/straight.png");
 }
 
-.handle-right-down{
-	background: url( 'assets/handles/right-down.png' );
+.handle-right-down {
+	background: url("assets/handles/right-down.png");
 }
 
-.handle-left-down{
-	background: url( 'assets/handles/left-down.png' );
+.handle-left-down {
+	background: url("assets/handles/left-down.png");
 }
 
-.handle-top-left{
-	background: url( 'assets/handles/right-down.png' );
-    transform: rotate(170deg);
+.handle-top-left {
+	background: url("assets/handles/right-down.png");
+	transform: rotate(170deg);
 }
 
 /*==============================
           Train
 ===============================*/
 
-.train{
+.train {
 	width: 40px;
 	height: 20px;
 	position: absolute;
 	background: pink;
 	border-radius: 3px;
-	border:2px solid #ffffff;
+	border: 2px solid #ffffff;
 }
 
-.train:before, .train:after{
+.train:before, .train:after {
 	content: '';
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    border: 2px solid black;
-    position: absolute;
-    bottom: -7px;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	border: 2px solid black;
+	position: absolute;
+	bottom: -7px;
 }
 
-.train span{
+.train span {
 	width: 10px;
 	height: 10px;
 	position: absolute;
@@ -122,38 +122,80 @@ button{
 	border-radius: 5px 5px 0 0;
 }
 
-.train:before{
-    left: 5px;
+.train:before {
+	left: 5px;
 }
 
-.train:after{
-    right: 5px;
+.train:after {
+	right: 5px;
 }
 
-.train-pink{
+.train-pink {
 	background: pink;
-    left: 500px;
-    top: 61px;
+	left: 500px;
+	top: 61px;
 }
 
-.train-yellow{
+.train-yellow {
 	background: yellow;
-    left: 500px;
-    top: 61px;
+	left: 500px;
+	top: 61px;
 }
 
-.train-green{
+.train-green {
 	background: green;
-    left: 500px;
-    top: 61px;
+	left: 500px;
+	top: 61px;
 }
 
-.train-violet{
+.train-violet {
 	background: violet;
-    left: 500px;
-    top: 61px;
+	left: 500px;
+	top: 61px;
 }
 
-.train-down{
-    transform: rotate( -90deg );
+.train-down {
+	transform: rotate(-90deg);
+}
+
+/* Station Position */
+[class^="station-"], [class*=" station-"] {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+}
+
+.station-pink {
+	left: 212px;
+	top: 377px;
+}
+
+.station-green {
+	left: 290px;
+	top: 367px;
+}
+
+.station-violet {
+	left: 50px;
+	top: 47px;
+}
+
+.station-yellow {
+	left: 130px;
+	top: 287px;
+}
+
+.station-blue {
+	left: 132px;
+	top: 217px;
+}
+
+.station-black {
+	left: 50px;
+	top: 127px;
+}
+
+.station-white {
+	left: 460px;
+	top: 287px;
 }
